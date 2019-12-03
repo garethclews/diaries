@@ -57,11 +57,3 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     [params.footer]
         copyright = "Aloysius"
         copyrightURL = "https://github.com/karetsu"
-
-        [[params.footer.socialIcon]]
-        icon = "tf-ion-social-twitter"
-        url = "https://twitter.com/raisedbyfinches"
-
-        [[params.footer.socialIcon]]
-        icon = "tf-ion-social-github"
-        url = "https://github.com/karetsu"
