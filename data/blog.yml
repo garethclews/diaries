@@ -2,6 +2,6 @@ enable : true
 sharing : true
 url : diaries/posts
 staticmanComments:
-  enable: false
+  enable: true
   notifications: true
-  api: https://dev.staticman.net/v3/entry/github/karetsu/diaries/master/comments
+  api: https://staticfishman.herokuapp.com/v2/entry/karetsu/diaries/master/comments
