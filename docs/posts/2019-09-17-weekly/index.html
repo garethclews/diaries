@@ -221,59 +221,6 @@ my way through the latter half!</p>
 </div>
                     
                     
-<section class="mt-4">
-    <h3>Comments</h3>
-
-    
-    
-
-    
-    
-    
-    <p>No comments yet. Your comment may be the first.</p>
-    
-</section>
-<div class="clearfix"></div>
-<section id="staticman-form">
-    <h3>Tell something</h3>
-    <script>var submitted=false;</script>
-    <iframe name="hidden_iframe" id="hidden_iframe" onload='if(submitted){swal("Thank you!", "Your comment has been sent and will be published after approval 😊", "success");}'></iframe>
-    <form class="form-control-meghna" method="POST" action="https://staticfishman.herokuapp.com/v2/entry/karetsu/diaries/master/comments" target="hidden_iframe" onsubmit="submitted=true;">
-        <input type="hidden" name="options[slug]" value="2019-09-17-weekly">
-        <input type="hidden" name="options[origin]" value="https://karetsu.github.io/diaries/posts/2019-09-17-weekly/#comments">
-        <input type="hidden" name="fields[reply_to]" value="">
-        <div class="form-group">
-            <label for="nick" class="font-weight-bold">Nickname</label>
-            <input class="form-control" id="nick" name="fields[name]" type="text" required="required"/>
-        </div>
-
-        <div class="form-group">
-            <label for="mail" class="font-weight-bold">Email</label>
-            <input type="email" class="form-control" id="mail" name="fields[email]" type="text" required="required"/>
-            <small id="mailHelp" class="form-text text-muted"> Your email address is used for <a href="https://gravatar.com" target="_blank" rel="noopener">Gravatar</a> image and notifications about new comments only. </small>
-        </div>
-
-        <input name="e-mail" type="text" id="e-mail" autocomplete="off">
-
-        <div class="form-group">
-            <label for="message" class="font-weight-bold">Comment</label>
-            <textarea id="message" name="fields[message]" minlength="5" rows="3" data-min-rows="3" class="form-control" required="required" placeholder="Feel free to use Markdown."></textarea>
-        </div>
-        
-        <input type="hidden" name="options[parent]" value="2019-09-17-weekly">
-        <div class="form-group">
-            <div class="custom-control custom-checkbox">
-                <input id="form-submit" name="options[subscribe]" type="checkbox" class="custom-control-input" value="email">
-                <label class="custom-control-label" for="form-submit">Notify me of new comments on this post</label>
-            </div>
-        </div>
-        
-        <div class="clearfix">
-            <input type="submit" class="btn btn-info" value="Add comment">
-        </div>
-    </form>
-</section>
-
 
                 </div>
             </div>
