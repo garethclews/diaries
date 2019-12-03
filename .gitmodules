@@ -1,0 +1,6 @@
+[submodule "themes/themes/meghna-hugo"]
+	path = themes/themes/meghna-hugo
+	url = https://github.com/themefisher/meghna-hugo
+[submodule "themes/meghna"]
+	path = themes/meghna
+	url = https://github.com/themefisher/meghna-hugo

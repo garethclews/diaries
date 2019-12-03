@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Fishman Diaries</title>
+    <link>https://karetsu.github.io/diaries/</link>
+    <description>Recent content on The Fishman Diaries</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 02 Dec 2019 09:57:55 +0000</lastBuildDate>
+    
+	<atom:link href="https://karetsu.github.io/diaries/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A New Hope</title>
+      <link>https://karetsu.github.io/diaries/posts/2019-11-29-weekly/</link>
+      <pubDate>Mon, 02 Dec 2019 09:57:55 +0000</pubDate>
+      
+      <guid>https://karetsu.github.io/diaries/posts/2019-11-29-weekly/</guid>
+      <description>Who&amp;rsquo;s more foolish? The fool or the fool who follows him?</description>
+    </item>
+    
+    <item>
+      <title>Party all the time</title>
+      <link>https://karetsu.github.io/diaries/posts/2019-11-25-weekly/</link>
+      <pubDate>Mon, 25 Nov 2019 09:00:00 +0000</pubDate>
+      
+      <guid>https://karetsu.github.io/diaries/posts/2019-11-25-weekly/</guid>
+      <description>Time is limited this week, so expect a rushed description of the content, but it is still better than no content!</description>
+    </item>
+    
+    <item>
+      <title>Cordyceps</title>
+      <link>https://karetsu.github.io/diaries/posts/2019-11-18-weekly/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      
+      <guid>https://karetsu.github.io/diaries/posts/2019-11-18-weekly/</guid>
+      <description>There are a million ways we should’ve died before today, and a million ways we can die before tomorrow.</description>
+    </item>
+    
+    <item>
+      <title>The fast and the furious</title>
+      <link>https://karetsu.github.io/diaries/posts/2019-11-12-weekly/</link>
+      <pubDate>Tue, 12 Nov 2019 09:00:00 +0000</pubDate>
+      
+      <guid>https://karetsu.github.io/diaries/posts/2019-11-12-weekly/</guid>
+      <description>Hobbs &amp;amp; Shaw wasn&amp;rsquo;t actually that bad&amp;hellip;
+Post of the week This week has been spent mostly reading mathematics (which I won&amp;rsquo;t bore you with) so my post of the week is the light summary of OpenAI releasing that they said was too dangerous.</description>
+    </item>
+    
+    <item>
+      <title>One more revolution, my love</title>
+      <link>https://karetsu.github.io/diaries/posts/2019-11-04-weekly/</link>
+      <pubDate>Mon, 04 Nov 2019 09:00:00 +0000</pubDate>
+      
+      <guid>https://karetsu.github.io/diaries/posts/2019-11-04-weekly/</guid>
+      <description>One more revolution, my love
+One more time through the fire</description>
+    </item>
+    
+    <item>
+      <title>Once upon a midnight dreary</title>
+      <link>https://karetsu.github.io/diaries/posts/2019-10-29-weekly/</link>
+      <pubDate>Tue, 29 Oct 2019 09:00:00 +0000</pubDate>
+      
+      <guid>https://karetsu.github.io/diaries/posts/2019-10-29-weekly/</guid>
+      <description>Blessings to you and your beloved dead, on this night when the veil is thin and there is magick in the air.</description>
+    </item>
+    
+    <item>
+      <title>Salvation is a last-minute business, boy</title>
+      <link>https://karetsu.github.io/diaries/posts/2019-10-24-weekly/</link>
+      <pubDate>Thu, 24 Oct 2019 09:00:00 +0000</pubDate>
+      
+      <guid>https://karetsu.github.io/diaries/posts/2019-10-24-weekly/</guid>
+      <description>There is something haunting in the light of the moon; it has all the dispassionateness of a disembodied soul, and something of its inconceivable mystery.</description>
+    </item>
+    
+    <item>
+      <title>Oh look, another glorious morning. Makes me sick!</title>
+      <link>https://karetsu.github.io/diaries/posts/2019-10-15-weekly/</link>
+      <pubDate>Tue, 15 Oct 2019 09:00:00 +0000</pubDate>
+      
+      <guid>https://karetsu.github.io/diaries/posts/2019-10-15-weekly/</guid>
+      <description>After summer we are&amp;hellip;   Blogs and commentary  Do you find your logistic regression loss behaves?</description>
+    </item>
+    
+    <item>
+      <title>West Sussex Football League</title>
+      <link>https://karetsu.github.io/diaries/posts/2019-10-01-weekly/</link>
+      <pubDate>Tue, 01 Oct 2019 09:00:00 +0000</pubDate>
+      
+      <guid>https://karetsu.github.io/diaries/posts/2019-10-01-weekly/</guid>
+      <description>I&amp;rsquo;m back from leave. These are the things I found interesting in my week off.</description>
+    </item>
+    
+    <item>
+      <title>Artful code</title>
+      <link>https://karetsu.github.io/diaries/posts/2019-09-30-opinion/</link>
+      <pubDate>Mon, 30 Sep 2019 09:00:00 +0000</pubDate>
+      
+      <guid>https://karetsu.github.io/diaries/posts/2019-09-30-opinion/</guid>
+      <description>&amp;hellip;or how I stopped worrying about getting it perfect and started to love PEP8</description>
+    </item>
+    
+  </channel>
+</rss>

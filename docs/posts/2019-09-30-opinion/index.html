@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-gb" scroll-behavior="smooth"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="30 September 2019, opinion piece">
+    <meta name="author" content="aloysius">
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.58.0" />
+
+    <title>Artful code | Posts</title>
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://karetsu.github.io/diaries/images/favicon.ico"/>
+
+    <!-- CSS -->
+    <!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="https://karetsu.github.io/diaries/plugins/themefisher-font/style.css">
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="https://karetsu.github.io/diaries/plugins/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://karetsu.github.io/diaries/plugins/animate-css/animate.css">
+    <!-- Magnific popup css -->
+    <link rel="stylesheet" href="https://karetsu.github.io/diaries/plugins/magnific-popup/dist/magnific-popup.css">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="https://karetsu.github.io/diaries/plugins/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="https://karetsu.github.io/diaries/plugins/slick-carousel/slick/slick-theme.css">
+    <!-- Main Stylesheet -->
+    
+    <link rel="stylesheet" href="https://karetsu.github.io/diaries/css/style.min.css" integrity="" media="screen">
+    <!-- Custom CSS -->
+    
+    <link rel="stylesheet" href="https://karetsu.github.io/diaries/css/custom.css">
+    
+
+</head>
+<body id="body" data-spy="scroll" data-target=".navbar" data-offset="52">
+        <div id="content">
+
+<!-- Fixed Navigation -->
+<nav id="navigation" class="navbar navbar-expand-lg navigation sticky-top">
+	<div class="container">
+
+		<!-- logo -->
+		<a class="navbar-brand logo" href="https://karetsu.github.io/diaries">
+			<img src="https://karetsu.github.io/diaries/images/logo_small.png" alt="Logo" />
+			<span class="pl-2 font-weight-bold">The Fishman Diaries</span>
+		</a>
+		<!-- /logo -->
+
+		<!-- responsive nav button -->
+		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!-- /responsive nav button -->
+
+		<!-- main nav -->
+		
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto navigation-menu">
+				<li class="nav-item"><a class="nav-link" data-scroll
+						href="https://karetsu.github.io/diaries#body">Home</a></li>
+				
+				<li class="nav-item"><a class="nav-link" data-scroll href="https://karetsu.github.io/diaries#blog">Blog</a></li>
+				
+				<li class="nav-item"><a class="nav-link" data-scroll href="https://karetsu.github.io/diaries#about">About Us</a></li>
+				
+			</ul>
+		</div>
+		
+		<!-- /main nav -->
+	</div>
+</nav>
+<!-- End Fixed Navigation -->
+
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <h1>Artful code</h1>
+                <ul class="list-inline mb-50">
+                    <li class="list-inline-item"><a href="/author/aloysius">aloysius</a></li>
+                    <li class="list-inline-item">Monday, Sep 30, 2019</li>
+                </ul>
+                <img class="img-fluid mb-50" src="https://karetsu.github.io/diaries/images/guest.jpg" alt="blog-image">
+            </div>
+            <div class="col-lg-8 offset-lg-2">
+                <div class="post-single-content">
+                    
+
+<p>&hellip;or how I stopped worrying about getting it perfect and started to love PEP8</p>
+
+<blockquote>
+<p>A guest blog by Arturas Eidukas (@finnkauski)</p>
+</blockquote>
+
+<p>Hi DaSHers, in lieu of last week&rsquo;s newsletter we have a guest blog from my good
+friend Art Eidukas. All words are his own, so please enjoy. Please note that
+just because it is not a typical Fishman post does not mean there are any fewer
+popular culture references!</p>
+
+<blockquote>
+<p>If you get yourself into PEP8ing mode, what do you tend to see? You tend to
+see the PEP8 stuff and not what really matters.</p>
+</blockquote>
+
+<ul>
+<li><strong>Raymond Hettinger, 2015</strong></li>
+</ul>
+
+<h2 id="motivation">Motivation</h2>
+
+<p>Well, firstly, I am by no means a python export. I am by no means a python
+expert, but I have been using <code>python</code> since September 2015 (almost 4 years at
+the time of writing). In that time I&rsquo;ve seen numerous codebases written by
+people of varying ability and experience. I have also worked in a development
+area which had a hard task of building infrastructure for a massive
+organization.</p>
+
+<p>As you use the language and hit your head into problem after problem, messy
+codebase after messy codebase you start to wonder if there is some form of best
+practice in writing consistent, clean and readible code.</p>
+
+<p>Some of you probably have been in a position of looking back a codebase you
+wrote a while back and recoiling how untidy it is and how now you would <code>write
+it in a much nicer way</code>. And to avoid this situation in the future, you might
+have even jumped to your favourite search engine and tried looking for some
+community guided standards. If you live in python-land you&rsquo;ll inevitably
+stumble upon <strong>PEP8</strong>.</p>
+
+<p>From here, you may go choose to go down one of two extreme routes:</p>
+
+<ol>
+<li><strong>The Great Dictator</strong></li>
+</ol>
+
+<p>One of those people who are so militant about following this standard, that
+   the ideology takes priority and it can impede long-term productivity. These
+   people begin to demand more and more time allocated to nitpicking the
+   smallest of issues never actually seeing the larger code issues that can
+   hide within.</p>
+
+<ol>
+<li><strong>The Dude/Dudette</strong></li>
+</ol>
+
+<p>Loves bowling, being a slacker. Hates having to do commenting, documenting code
+   and sure as hell won&rsquo;t bother having nice versions control practices.
+   Typically does what they want with a drink in their hand which might or might
+   not contain a White Russian and when asked if they are aware of python coding
+   standards they will just namedrop <em>PEP8</em>.</p>
+
+<p>In my personal experience I&rsquo;ve not met anyone on either of the two extremes.
+Most people will end up between the two, even if nobody wants to admit that
+they might be <sup>1</sup>&frasl;<sub>5</sub> dictator.</p>
+
+<p>You should read PEP8, internalise what you think will help you be clean and
+consistent within you codebase and then just move on. The coding standard
+quagmire is a hard one to navigate and it is why this write up essentially exists.</p>
+
+<p>I&rsquo;m here to try to encourage you to be more pragmatic and critical about coding
+standards and to brain dump my thoughts on clean code in python.
+If you&rsquo;re reading this then I presume you&rsquo;re ready to dive in, but be warned,
+this might fall under (Sturgeon&rsquo;s Law)[<a href="https://en.wikipedia.org/wiki/Sturgeon%2527s_law]..">https://en.wikipedia.org/wiki/Sturgeon%2527s_law]..</a>.</p>
+
+<h2 id="acknowledgements-and-sources">Acknowledgements and Sources</h2>
+
+<p>I think the key takeaways from this post are inspired heavily by the following
+talk:</p>
+
+<p>(Raymond Hettinger - Beyond PEP 8 &ndash; Best practices for beautiful intelligible code - PyCon 2015)[<a href="https://www.youtube.com/watch?v=wf-BqAjZb8M">https://www.youtube.com/watch?v=wf-BqAjZb8M</a>]</p>
+
+<p>Please go see it and show Raymond some love on various social media. Twitter is
+where posts useful tips and tricks for python.</p>
+
+<h3 id="thoughts-about-pep8">Thoughts about PEP8</h3>
+
+<p>Ahh, Python Enhancement Proposal number 8, or PEP8 for short. Created on
+05-Jul-2001 to help establish a consistent way of styling your code. However in
+my experience, it has been misused to great extent. You see, the issue here is that
+people want nice and tidy python code, but by evangelically following this
+standard and not compromising with PEP8 they sometimes introduce other, more
+glaring issues. Even <strong>worse</strong>, by reviewing other peoples code and focusing
+purely on the compliance with PEP8, people miss what is known as <em>unpythonic</em>
+code. In other words, code that can be made much tidier and clearer by
+leveraging python specific language features.</p>
+
+<p>Raymond Hettinger (python core developer) has a great talk about
+PEP8 and how to write intelligible code. We will come back this talk throughout
+our coverage of PEP8. But before moving on I&rsquo;d like raise a point that he makes
+early in the talk to set the scene:</p>
+
+<blockquote>
+<p>What you want is that the people who are struggling a little bit (with a
+coding problem) to overcome and deal with a problem and at some point become
+very effective. How can you prevent that outcome. Its easy! You give them some
+low hanging fruit, something to go do that seems productive but isn&rsquo;t. And one
+of those things is a certain PEP, located between 7 and 9.</p>
+</blockquote>
+
+<p>Also, I will be omitting quite a few guidelines as I cover PEP8, for the sake of
+simplifying this writeup. By cherry-picking which ones to present, I
+will give a you fewer things to remember and more rule of thumb things to
+follow. Consider this as me doing the hard work to suggest which are the most
+important parts. You&rsquo;re welcome.</p>
+
+<p>The one key message I want to get across before we proceed is that I do not
+dislike PEP8. I think it&rsquo;s extremely useful, but I don&rsquo;t want people being
+militant about following every bit of advice it gives without considering it for
+their use case. Other than that I think everyone should read the PEP and
+internalise what it tries to preach.</p>
+
+<h4 id="a-note-on-consistency">A note on Consistency</h4>
+
+<p>The first line of the PEP8 introduction states:</p>
+
+<blockquote>
+<p>This document gives conventions for the Python code comprising the standard
+library in the main Python distribution.</p>
+</blockquote>
+
+<p>The key word there is <code>convention</code> which is defined in the Oxford English
+dictionary as: <em>A way in which something is usually done</em>. The key word there
+is <em>usually</em>. Consistency is important, but when consistency is not an option you
+should use your best judgement. Know when to be inconsistent, comes with time and
+experience so write code and get feedback.</p>
+
+<p>As Mr. Hettinger says, a lot of people skip this part and jump further into
+PEP8, but really this is a <strong>key</strong> message across PEP8, know which battles to
+fight and know which sacrifices to make to ensure consistency with PEP8
+across your code-base and your project.</p>
+
+<p>See
+(here)[<a href="https://www.python.org/dev/peps/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds">https://www.python.org/dev/peps/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds</a>]
+for yourself for a few cases where sacrificing style guide consistency might be preferred.</p>
+
+<h3 id="code-layout">Code Layout</h3>
+
+<h4 id="indentation">Indentation</h4>
+
+<blockquote>
+<p>Use 4 spaces for indentation.</p>
+</blockquote>
+
+<p>I firmly believe that using 4 spaced indents for your python code has a
+significant impact on the readability of the code. Imagine having a piece of
+code aligned as follows:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">function</span><span class="p">(</span><span class="n">parameter</span><span class="p">):</span>
+
+  <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">parameter</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+      <span class="n">result</span><span class="o">+=</span><span class="n">i</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="k">continue</span>
+
+  <span class="k">return</span> <span class="n">result</span></code></pre></div>
+<p>I don&rsquo;t know about you, but to me this seems a bit cramped. Refactoring your
+code as follows adds a bit more space and lets the eye clearly align and
+distinguish what level each line is at. And yes, I know you can get indentation
+guides in your fancy editor, but that won&rsquo;t be there for you when u want to
+quickly open this in Notepad or view it on GitHub.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">function</span><span class="p">(</span><span class="n">parameter</span><span class="p">):</span>
+
+    <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">parameter</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+            <span class="n">result</span><span class="o">+=</span><span class="n">i</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">continue</span>
+
+    <span class="k">return</span> <span class="n">result</span></code></pre></div>
+<p>Note that things like the if statement and the code for each outcome is quite
+clearly indented and at least to my eye is easier to split out!</p>
+
+<p>The Indentation chapter of PEP8 covers some more interesting choices for
+indenting function parameters etc. If you are interested, you can read more
+about it (here)[<a href="https://www.python.org/dev/peps/pep-0008/#code-lay-out">https://www.python.org/dev/peps/pep-0008/#code-lay-out</a>].</p>
+
+<h4 id="tabs-or-spaces">Tabs or Spaces?</h4>
+
+<blockquote>
+<p>Spaces</p>
+</blockquote>
+
+<p>I think as tedious as it sounds, you should use spaces (ideally 4) for
+indentation. I think to make it simpler, a lot of modern text editors that are
+used in coding as well as full blown
+(IDE)[<a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwi1keyUr-niAhX_QxUIHR41DhUQFjACegQIEhAG&amp;url=https%253A%252F%252Fen.wikipedia.org%252Fwiki%252FIntegrated_development_environment&amp;usg=AOvVaw26G_hSQrwphgc0qRbOs_Ur]'s">https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwi1keyUr-niAhX_QxUIHR41DhUQFjACegQIEhAG&amp;url=https%253A%252F%252Fen.wikipedia.org%252Fwiki%252FIntegrated_development_environment&amp;usg=AOvVaw26G_hSQrwphgc0qRbOs_Ur]'s</a>
+will convert tabs into spaces for you if you ask them to if not by default.</p>
+
+<p>The issue is that if you mix tabs and spaces (which might look the same to you,
+but aren&rsquo;t really the same thing to python), you might get a <strong>TabError</strong> and that&rsquo;s
+not something that you really want slowing you down when it is so easily
+avoidable.</p>
+
+<h4 id="maximum-line-length">Maximum Line Length</h4>
+
+<blockquote>
+<p>PEP8 says 79. I say 90-ish</p>
+</blockquote>
+
+<p>Well, that&rsquo;s not really true as I stole this guideline from Mr. Hettingers talk.
+He raises a great point (which admittedly is reflected in PEP8 once you read it
+more carefully) that militantly observing 79 character guidelines is sometimes
+isn&rsquo;t very sensible.</p>
+
+<p><strong>Indentation in python is important</strong>. So lets say we have a bit of code with a
+ function and a few nested structures within the code. Something along the lines
+ of:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">useful_function_name</span><span class="p">(</span><span class="n">list_of_entries</span><span class="p">,</span> <span class="o">****</span><span class="n">kwargs</span><span class="p">):</span>
+
+    <span class="k">for</span> <span class="n">list_of_subentries</span> <span class="ow">in</span> <span class="n">list_of_entries</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">subentry</span> <span class="ow">in</span> <span class="n">list_of_subentries</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">subentry</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">some_global_list</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="s2">&#34;{} is not in the global list&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">subentry</span><span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">some_global_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">another_useful_function</span><span class="p">(</span><span class="n">subentry</span><span class="p">))</span>
+
+    <span class="k">return</span> <span class="n">some_global_list</span></code></pre></div>
+<p>And perhaps you could say that this bit of code is not a realistic example, but
+it serves to illustrate that by having descriptive variable and function names and
+using 4 space indentation makes the 79 character limit approach ever so
+quickly.</p>
+
+<p>So where does this leave us. Well we could go away and make the names of the
+functions and variables shorter, but we then sacrifice readability for some
+arbitrary number of characters. But guess what? Nobody is going to force you
+(although they could do it through (commit
+hooks)[<a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks])">https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks])</a> to be
+consistent with that number, which gives you the space really to set your own
+limits for your own team.</p>
+
+<p>Modern monitors and resolutions are wide. We can spare a few more characters
+nowadays! However the key here is to keep the lines not too long and more
+importantly readable. So pick a sensible line length (something like 90
+characters perhaps just to add some space for indentation) and stick to it!</p>
+
+<h4 id="blank-lines">Blank Lines</h4>
+
+<p>I don&rsquo;t really have much to say on this bit of the style guide. I think it lays
+out some sensible rules, but I do want to highlight this line:</p>
+
+<blockquote>
+<p>Use blank lines in functions, sparingly, to indicate logical sections.</p>
+</blockquote>
+
+<p>I think this is a really good piece of advice and if you take away something
+from this PEP8 suggestion on blank lines, it should probably be that.</p>
+
+<h4 id="imports">Imports</h4>
+
+<blockquote>
+<ul>
+<li>Imports are always put at the top of the file, just after any module comments and docstrings, and before module globals and constants</li>
+<li>Wildcard imports (<code>from &lt;module&gt; import *</code>) should be avoided</li>
+</ul>
+</blockquote>
+
+<p>Those 2 bits of advice I think are key, there are some other things you could
+learn by reading that section, but those are really the key things to follow.
+Imagine yourself opening a piece of code that someone else wrote. Now you scroll
+through it without thinking, take a sip of coffee and start tackling the task of
+understanding what it does. The first thing you want to know is what does it
+depend on? What kind of packages do I need? Well if that person followed
+sensible guidelines, you&rsquo;d see it all in one place. Neat. On the other hand if
+the imports are scattered everywhere, you need to do the good ol&rsquo; CTR+F to
+actually get what you want and even then it would involve tons of jumping around
+through the file.</p>
+
+<p>Imports at the top. Always.</p>
+
+<p>Now the second bit of advice about imports with ** is actually quite important. I
+won&rsquo;t even go into things like namespacing, but suffice it to say that when one
+reads through a codebase and stumbles upon a function that seems to be coming
+from nowhere, usually <code>*</code> is to blame. And even worse if someone used two or
+more <code>*</code> imports&hellip; well then you&rsquo;re in for a good ol&rsquo; search online through the
+package documentation (if you&rsquo;re lucky and that exists).</p>
+
+<h4 id="pet-peeves-and-other-recommendations">Pet Peeves and other recommendations</h4>
+
+<p>The (pet peeves and other
+recommendations)[<a href="https://www.python.org/dev/peps/pep-0008/#pet-peeves">https://www.python.org/dev/peps/pep-0008/#pet-peeves</a>] sections
+in PEP8 are quite sensible.</p>
+
+<p>I would go check them out as they give you a better idea of the &lsquo;little things&rsquo;
+that you could do to make your code better.</p>
+
+<h3 id="comments">Comments</h3>
+
+<blockquote>
+<p>Comments that contradict the code are worse than no comments. Always make a
+priority of keeping the comments up-to-date when the code changes!</p>
+</blockquote>
+
+<p>Again, the section on comments is actually really good and has a ton of useful
+content. However the highlighted bit there is really important. Keep your
+comments (and (docstrings)[<a href="https://www.geeksforgeeks.org/python-docstrings/">https://www.geeksforgeeks.org/python-docstrings/</a>] and
+any documentation) up to date!</p>
+
+<p>Avoid inline comments that say what the code does explicitly. If your code looks
+like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">vaidated_input</span> <span class="o">=</span> <span class="n">validate</span><span class="p">(</span><span class="n">some_text</span><span class="p">)</span></code></pre></div>
+<p>You don&rsquo;t need to comment it. It wastes your time, someone elses time
+reading it, computers time, space, time, space-time&hellip;
+Anyway, if you write your code in a tidy, descriptive way you won&rsquo;t need inline
+comments that state what your code does. That said, a very sensible use-case for
+an inline comment would be explaining why for example we do things. Like in that
+case there we could say:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">validated_input</span> <span class="o">=</span> <span class="n">validate</span><span class="p">(</span><span class="n">some_text</span><span class="p">)</span> <span class="c1"># Validate input to avoid code injection</span></code></pre></div>
+<h3 id="docstrings">Docstrings</h3>
+
+<p>This deserves its own writeup, but suffice it to say that there is a separate
+(PEP)[<a href="https://www.python.org/dev/peps/pep-0257">https://www.python.org/dev/peps/pep-0257</a>] that covers how to style those.
+My advice on this account is: <strong>USE THEM</strong>. Please go read about them, pick
+sensible guidelines on how to write them and use them.</p>
+
+<p>Future you and anyone who reads your code will thank you.</p>
+
+<p>I kept writting this post and decided to jump back up to this section and add a
+bit more emphasis on docstring. I think once you&rsquo;ve written them once or twice
+given a chosen standard (I use the
+(numpy)[<a href="https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html">https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html</a>]
+it will soon become almost second nature. And it will <strong>ALWAYS</strong> be easier to
+write them after you&rsquo;ve written the code that they relate to. Because (a) you
+have all the things it needs and does fresh in your head and (b) its much harder
+to not be complacent with missing documentation when you know that it is code
+you&rsquo;ve written 3 months ago and it will be a faff figuring out what it does.</p>
+
+<p>Also a rule of thumb I tend to use (make your own judgement on this) is that my
+functions have to do what they say on the name and be fairly simplistic
+abstractions of things you do often. This simplicity leads to my docstrings being simple
+and concise because the function has a clear purpose and it is clear on what it
+takes in, what it returns and what it affects. So whenever I notice that my
+docstrings become bogged down and complicated I stop and think if my function is
+trying to do too much and if some of the functionality there could be abstracted
+into its own little function. So long docstrings are a nice little marker to
+check if your code can be simplified. But again, thats just me. Try thinking like that
+for a bit and see if its useful over time. I&rsquo;m not your boss.</p>
+
+<h3 id="naming-conventions">Naming conventions</h3>
+
+<p>There is a lot to talk about here. As the (Descriptive: Naming
+Styles)[<a href="https://www.python.org/dev/peps/pep-0008/#descriptive-naming-styles">https://www.python.org/dev/peps/pep-0008/#descriptive-naming-styles</a>]
+section of PEP8 shows there are a lot of ways to name your functions, variables
+etc. I personally use what is called snake case when I write in python meaning
+that I link words in my function names with underscores like so:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">my_new_value</span> <span class="o">=</span> <span class="n">my_snake_case_function</span><span class="p">(</span><span class="n">old_value</span><span class="p">)</span></code></pre></div>
+<p>In python for the most part, that is the recommended way to name things like
+variables and functions. In other languages, like <code>Rust</code>, you even get told off
+by the compiler for not doing that. That said its not the end of the world to
+use different conventions. I use CamelCase in Haskell for example as that is
+loosely the standard in that language.</p>
+
+<p>But even in python, you really have seperate conventions on what to name how.
+Exception names, typing variables and class names make use of upper case and
+capitalisation in python. And I think over time I realised that the naming
+conventions for the various python objects actually sensible and readable.
+The main reason that different types of objects have different styles is to make
+it much easier, at a glance, to know something about what you are looking at. As
+above, if you meet an object called <code>Guido</code> you know that it is a class of some
+kind where <code>guido</code> would instead be a function.</p>
+
+<p>So not much to add here, go read that section and internalise that.</p>
+
+<h3 id="programming-recommendations">Programming Recommendations</h3>
+
+<p>Again, a great section. Well written, gives succinct and useful advice to people.
+But more importantly it does a bit more than just tell you how to style your
+ode. It tells you how to write more <em>pythonic</em> code (which is really sort of
+the point of PEP8 in a way).</p>
+
+<p>It is not a tutorial on how to code in python, but it definitely introduces a
+few concepts and how to use them in a sensible way to write more pythonic
+looking and functioning code.</p>
+
+<h2 id="the-shifting-sands-of-simple">The shifting sands of simple</h2>
+
+<p>What does it mean to be <em>pythonic</em>?</p>
+
+<p>Let me give you two example functions:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">example1</span><span class="p">():</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&#34;yellow&#34;</span><span class="p">,</span> <span class="s2">&#34;blue&#34;</span><span class="p">,</span> <span class="s2">&#34;red&#34;</span><span class="p">]:</span>
+        <span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34; &#34;</span> <span class="o">+</span> <span class="n">color</span><span class="p">)</span>
+        <span class="n">index</span> <span class="o">=</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="c1"># ------</span>
+<span class="k">def</span> <span class="nf">example2</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">color</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="s2">&#34;yellow&#34;</span><span class="p">,</span> <span class="s2">&#34;blue&#34;</span><span class="p">,</span> <span class="s2">&#34;red&#34;</span><span class="p">]):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&#34;{index + 1} {color}&#34;</span><span class="p">)</span>
+
+<span class="c1"># ------ for fun :)</span>
+<span class="k">def</span> <span class="nf">example3</span><span class="p">():</span>
+    <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">tpl</span><span class="p">:</span> <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&#34;{tpl[0]} {tpl[1]}&#34;</span><span class="p">),</span> <span class="nb">enumerate</span><span class="p">([</span><span class="s2">&#34;yellow&#34;</span><span class="p">,</span><span class="s2">&#34;blue&#34;</span><span class="p">,</span><span class="s2">&#34;red&#34;</span><span class="p">])))</span></code></pre></div>
+<p>Let&rsquo;s assume we don&rsquo;t care about efficiency in this function. We don&rsquo;t mind
+because it does such a minor thing in the grand scheme of our codebase.
+Under that assumption, both these functions will do the same job.</p>
+
+<p>They should <strong>not</strong> fail or have different results unless people use old versions
+of python, etc. But just by looking at them I can see which person has used python
+more.</p>
+
+<p>Now thats not to say that one is more right than another at this level, but
+purely from the way they have written the piece of code its clear that
+<strong>example2</strong> is leveraging a lot more of the python in-built tools than
+<strong>example1</strong> (if something in there is new to you I hope you go and check it out).</p>
+
+<p><code>So what?</code> I can hear you say. Does that change much? Well as I am writing this
+these two are equivilent to me, but the second one looks tidier as it leverages
+things that are made to solve the required problems (like
+(enumerate)[<a href="https://www.python.org/dev/peps/pep-0279/])">https://www.python.org/dev/peps/pep-0279/])</a>. This is what In my head
+it all boils down to. Over time you learn more about python, its features and
+what should feel <code>right</code> when it comes to code in python. And then you become
+more pythonic which to me means you start leveraging all the tools the language
+has to offer in their intended use cases.</p>
+
+<p>But whatever stage you are at, be it python wiz-kid, or just beginning with the
+language, try appreciating the perspective of others. Wiz kids, appreciate that
+sometime writing things out for others with more clear instructions could help
+the target audience and junior devs get their heads around it more clearly
+(<strong>example1</strong> is much easier to wrap your head around for someone new to python).</p>
+
+<p>And the newbies, that are just discovering python, accept that some thing written
+by people who have been doing it for a while will look much more concise and
+sometimes will involve features you don&rsquo;t know about. But don&rsquo;t take this
+sitting down, take the time when you can to look at these cryptic functions and
+features, understand what <strong>specific use case</strong> they are trying to address and
+incorporate them in your codebase.</p>
+
+<p>So to sort of pull this all together, if you know about python and already write
+pythonic code, think of who is going to read it and give them time to learn the
+features of python. And if you&rsquo;re the <code>example1</code> person, take the time when you
+see something come up that you haven&rsquo;t seen before to do a quick search online
+and see if you can learn more about the language itself.</p>
+
+<h2 id="solving-things-with-dirty-code">Solving things with dirty code</h2>
+
+<p>Now this is might be a contraversial section so I will keep it short. If you&rsquo;re
+ever opening up a text file and want to get the last few lines or if you&rsquo;re just
+opening a csv to save it to Excel, consider not worrying about code style at
+all.</p>
+
+<p>Hear me out. Learning how to write python code in a nice and tidy way takes
+time. And if you&rsquo;re solving a one-off problem that will never see the light of
+day and will sit in the depths of your <code>D:</code> drive, do it quick and simple. Dont
+worry about variable names, line length, docstrings etc. Just do it and move on.</p>
+
+<p>Over time as you write more and more public facing code you will internalise the
+bits of PEP8 you need and the next time you do the csv to Excel conversion (because
+you lost the code in the cold depths of your hard drive), you will likely just
+write it in a nice and tidy way without even noticing.</p>
+
+<p>It takes time.</p>
+
+                    
+                        
+
+<div class="social-share pt-4">
+        <h4>Share:</h4>
+        
+        <a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fkaretsu.github.io%2fdiaries%2fposts%2f2019-09-30-opinion%2f" target="_blank" rel="noopener" aria-label="">
+            <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/></svg>
+            </div>
+        </div>
+    </a>
+
+    
+    <a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=Artful%20code&amp;url=https%3a%2f%2fkaretsu.github.io%2fdiaries%2fposts%2f2019-09-30-opinion%2f" target="_blank" rel="noopener" aria-label="">
+        <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"/></svg>
+        </div>
+    </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://plus.google.com/share?url=https%3a%2f%2fkaretsu.github.io%2fdiaries%2fposts%2f2019-09-30-opinion%2f" target="_blank" rel="noopener" aria-label="">
+    <div class="resp-sharing-button resp-sharing-button--google resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.37 12.93c-.73-.52-1.4-1.27-1.4-1.5 0-.43.03-.63.98-1.37 1.23-.97 1.9-2.23 1.9-3.57 0-1.22-.36-2.3-1-3.05h.5c.1 0 .2-.04.28-.1l1.36-.98c.16-.12.23-.34.17-.54-.07-.2-.25-.33-.46-.33H7.6c-.66 0-1.34.12-2 .35-2.23.76-3.78 2.66-3.78 4.6 0 2.76 2.13 4.85 5 4.9-.07.23-.1.45-.1.66 0 .43.1.83.33 1.22h-.08c-2.72 0-5.17 1.34-6.1 3.32-.25.52-.37 1.04-.37 1.56 0 .5.13.98.38 1.44.6 1.04 1.84 1.86 3.55 2.28.87.23 1.82.34 2.8.34.88 0 1.7-.1 2.5-.34 2.4-.7 3.97-2.48 3.97-4.54 0-1.97-.63-3.15-2.33-4.35zm-7.7 4.5c0-1.42 1.8-2.68 3.9-2.68h.05c.45 0 .9.07 1.3.2l.42.28c.96.66 1.6 1.1 1.77 1.8.05.16.07.33.07.5 0 1.8-1.33 2.7-3.96 2.7-1.98 0-3.54-1.23-3.54-2.8zM5.54 3.9c.33-.38.75-.58 1.23-.58h.05c1.35.05 2.64 1.55 2.88 3.35.14 1.02-.08 1.97-.6 2.55-.32.37-.74.56-1.23.56h-.03c-1.32-.04-2.63-1.6-2.87-3.4-.13-1 .08-1.92.58-2.5zM23.5 9.5h-3v-3h-2v3h-3v2h3v3h2v-3h3"/></svg>
+    </div>
+</div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="mailto:?subject=Artful%20code&amp;body=https%3a%2f%2fkaretsu.github.io%2fdiaries%2fposts%2f2019-09-30-opinion%2f" target="_self" rel="noopener" aria-label="">
+    <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z"/></svg>
+    </div>
+</div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=https%3a%2f%2fkaretsu.github.io%2fdiaries%2fposts%2f2019-09-30-opinion%2f&amp;resubmit=true&amp;title=Artful%20code" target="_blank" rel="noopener" aria-label="">
+    <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 11.5c0-1.65-1.35-3-3-3-.96 0-1.86.48-2.42 1.24-1.64-1-3.75-1.64-6.07-1.72.08-1.1.4-3.05 1.52-3.7.72-.4 1.73-.24 3 .5C17.2 6.3 18.46 7.5 20 7.5c1.65 0 3-1.35 3-3s-1.35-3-3-3c-1.38 0-2.54.94-2.88 2.22-1.43-.72-2.64-.8-3.6-.25-1.64.94-1.95 3.47-2 4.55-2.33.08-4.45.7-6.1 1.72C4.86 8.98 3.96 8.5 3 8.5c-1.65 0-3 1.35-3 3 0 1.32.84 2.44 2.05 2.84-.03.22-.05.44-.05.66 0 3.86 4.5 7 10 7s10-3.14 10-7c0-.22-.02-.44-.05-.66 1.2-.4 2.05-1.54 2.05-2.84zM2.3 13.37C1.5 13.07 1 12.35 1 11.5c0-1.1.9-2 2-2 .64 0 1.22.32 1.6.82-1.1.85-1.92 1.9-2.3 3.05zm3.7.13c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9.8 4.8c-1.08.63-2.42.96-3.8.96-1.4 0-2.74-.34-3.8-.95-.24-.13-.32-.44-.2-.68.15-.24.46-.32.7-.18 1.83 1.06 4.76 1.06 6.6 0 .23-.13.53-.05.67.2.14.23.06.54-.18.67zm.2-2.8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm5.7-2.13c-.38-1.16-1.2-2.2-2.3-3.05.38-.5.97-.82 1.6-.82 1.1 0 2 .9 2 2 0 .84-.53 1.57-1.3 1.87z"/></svg>
+    </div>
+</div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="whatsapp://send?text=Artful%20code%20https%3a%2f%2fkaretsu.github.io%2fdiaries%2fposts%2f2019-09-30-opinion%2f" target="_blank" rel="noopener" aria-label="">
+    <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.1 3.9C17.9 1.7 15 .5 12 .5 5.8.5.7 5.6.7 11.9c0 2 .5 3.9 1.5 5.6L.6 23.4l6-1.6c1.6.9 3.5 1.3 5.4 1.3 6.3 0 11.4-5.1 11.4-11.4-.1-2.8-1.2-5.7-3.3-7.8zM12 21.4c-1.7 0-3.3-.5-4.8-1.3l-.4-.2-3.5 1 1-3.4L4 17c-1-1.5-1.4-3.2-1.4-5.1 0-5.2 4.2-9.4 9.4-9.4 2.5 0 4.9 1 6.7 2.8 1.8 1.8 2.8 4.2 2.8 6.7-.1 5.2-4.3 9.4-9.5 9.4zm5.1-7.1c-.3-.1-1.7-.9-1.9-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1s-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6s.3-.3.4-.5c.2-.1.3-.3.4-.5.1-.2 0-.4 0-.5C10 9 9.3 7.6 9 7c-.1-.4-.4-.3-.5-.3h-.6s-.4.1-.7.3c-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.3-.3-.4-.6-.5z"/></svg>
+    </div>
+</div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=Artful%20code&amp;url=https%3a%2f%2fkaretsu.github.io%2fdiaries%2fposts%2f2019-09-30-opinion%2f" target="_blank" rel="noopener" aria-label="">
+    <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.707 8.475C.275 8.64 0 9.508 0 9.508s.284.867.718 1.03l5.09 1.897 1.986 6.38a1.102 1.102 0 0 0 1.75.527l2.96-2.41a.405.405 0 0 1 .494-.013l5.34 3.87a1.1 1.1 0 0 0 1.046.135 1.1 1.1 0 0 0 .682-.803l3.91-18.795A1.102 1.102 0 0 0 22.5.075L.706 8.475z"/></svg>
+    </div>
+</div>
+</a>
+
+</div>
+                    
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        </div><!-- end Contact Area -->
+<footer id="footer" class="bg-one">
+	<div class="container">
+		<div class="row wow fadeInUp" data-wow-duration="500ms">
+			<div class="col-xl-12">
+
+				<!-- Footer Social Links -->
+				<div class="social-icon">
+					<ul class="list-inline">
+						
+						<li class="list-inline-item"><a href="https://twitter.com/raisedbyfinches"><i class="tf-ion-social-twitter"></i></a></li>
+						
+						<li class="list-inline-item"><a href="https://github.com/karetsu"><i class="tf-ion-social-github"></i></a></li>
+						
+					</ul>
+				</div>
+
+				<!-- copyright -->
+				<div class="copyright text-center">
+					<a href="https://karetsu.github.io/diaries">
+						<img src="https://karetsu.github.io/diaries/images/logo_small.png" alt="Meghna" />
+					</a>
+					<br>
+					<p>Design And Developed by <a href="https://github.com/karetsu">  Aloysius  </a>. Copyright &copy; <script>
+							document.write(new Date().getFullYear())
+						</script>. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- /footer -->
+
+<!-- Essential Scripts -->
+
+		<!-- Main jQuery -->
+		<script type="text/javascript" src="https://karetsu.github.io/diaries/plugins/jquery/dist/jquery.min.js"></script>
+		<!-- Bootstrap 4.3 + Popper -->
+		<script type="text/javascript" src="https://karetsu.github.io/diaries/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- Slick Carousel -->
+		<script type="text/javascript" src="https://karetsu.github.io/diaries/plugins/slick-carousel/slick/slick.min.js"></script>
+		<!-- Portfolio Filtering -->
+		<script type="text/javascript" src="https://karetsu.github.io/diaries/plugins/filterzr/jquery.filterizr.min.js"></script>
+		<!-- Magnific popup -->
+		<script type="text/javascript" src="https://karetsu.github.io/diaries/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+		<!-- Google Map API -->
+		<script type="text/javascript"  src="https://karetsu.github.io/diaries"></script>
+		<!-- Number Counter Script -->
+		<script type="text/javascript" src="https://karetsu.github.io/diaries/plugins/count-to/jquery.countTo.js"></script>
+		<!-- wow.min Script -->
+		<script type="text/javascript" src="https://karetsu.github.io/diaries/plugins/wow/dist/wow.min.js"></script>
+		<!-- Scroll behavior polyfill -->
+		
+		<script src="https://karetsu.github.io/diaries/js/scroll-behavior-polyfill.min.js"></script>
+		<!-- Sweet Alert -->
+		<script type="text/javascript" src="https://karetsu.github.io/diaries/plugins/sweet-alert/sweetalert.min.js"></script>
+		<!-- Custom js -->
+		
+		<script src="https://karetsu.github.io/diaries/js/script.min.js"></script>
+		<!-- google analitycs -->
+		<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				ga('create', '', 'auto');
+				ga('send', 'pageview');
+		</script>
+</body>
+</html>

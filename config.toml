@@ -1,0 +1,67 @@
+baseURL = "https://karetsu.github.io/diaries"
+languageCode = "en-gb"
+DefaultContentLanguage = "en"
+title = "The Fishman Diaries"
+theme = "meghna"
+summaryLength = 10
+publishDir="docs"
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+rssLimit = 10  # Maximum number of items in the RSS feed.
+enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
+
+[taxonomies]
+  author = "author"
+  category = "categories"
+  tag = "tags"
+
+# Menu
+[menu]
+    [[menu.nav]]
+    name = "Blog"
+    URL = "blog"
+    weight = 2
+
+    [[menu.nav]]
+    name = "About Us"
+    URL = "about"
+    weight = 3
+
+# Site params
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+  home= "Home"
+  logo = "images/logo_small.png"
+  # Meta data
+  description = "A curated archive of interesting blogs and papers"
+  author = "Aloysius"
+  code_copy_button = true
+  # Google Analitycs
+  custom_css = ["css/custom.css"]
+
+    # Banner Section
+    [params.banner]
+    enable = true
+    bgImage = "images/slider/hero-area.jpg"
+    #icon = "tf-ion-play"
+    heading = "The Fishman Diaries"
+    content= "A curated archive of interesting blogs and papers"
+    btn = true
+    btnText="Read posts"
+    btnURL="posts/"
+
+    # footer
+    [params.footer]
+        copyright = "Aloysius"
+        copyrightURL = "https://github.com/karetsu"
+
+        [[params.footer.socialIcon]]
+        icon = "tf-ion-social-twitter"
+        url = "https://twitter.com/raisedbyfinches"
+
+        [[params.footer.socialIcon]]
+        icon = "tf-ion-social-github"
+        url = "https://github.com/karetsu"

@@ -1,0 +1,36 @@
+enable : true
+heading : About
+headingSpan : Us
+aboutItem :
+- icon : tf-tools
+  title : What this is
+  content : Welcome to The Fishman Diaries. A newsletter for my local statistics
+            and machine learning community of interest.
+            There are much, much better newsletters and points of interest than this one -
+            and very frequently the content overlaps. Where I use the content from those I am
+            subscribed to I use the utm info to respect the redirect.
+
+
+            Better alternatives include (but are not limited to)
+            [The Data Science Roundup](https://roundup.fishtownanalytics.com/) and
+            [Data Science Weekly](https://www.datascienceweekly.org/)
+
+- icon : tf-strategy
+  title : Opinionated
+  content : All views are those of the authors and do not represent the views of
+            any organisation.
+
+
+            Standard weekly posts are demarkated by The
+            Creature from the Blue Lagoon whilst guest posts are shown by the Chinese
+            Wildman monster from Big Trouble in Little China.
+
+- icon : tf-anchor2
+  title : Our origin story
+  content : Whilst attempting to decide on a name for our little group there was an online
+            straw poll. One response came from `fish_man_168` and the name stuck. Note that no
+            individual is Fishman and that he is instead the mascot of our community,
+            although at times where we purport to be this is simply for effect.
+
+
+            Our logo is not our own, it is the Flying Hellfish logo from The Simpsons.

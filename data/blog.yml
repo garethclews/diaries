@@ -1,0 +1,7 @@
+enable : true
+sharing : true
+url : diaries/posts
+staticmanComments:
+  enable: false
+  notifications: true
+  api: https://dev.staticman.net/v3/entry/github/karetsu/diaries/master/comments
