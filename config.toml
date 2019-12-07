@@ -36,7 +36,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   home= "Home"
   logo = "images/logo_small.png"
   # Meta data
-  description = "A curated archive of interesting blogs and papers"
+  description = ""
   author = "Aloysius"
   code_copy_button = true
   # Google Analitycs
@@ -45,7 +45,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     # Banner Section
     [params.banner]
     enable = true
-    bgImage = "images/slider/hero-area.jpg"
+    bgImage = "images/cthulu.jpg"
     #icon = "tf-ion-play"
     heading = "The Fishman Diaries"
     content= "A curated archive of interesting blogs and papers"
