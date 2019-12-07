@@ -1,7 +1,7 @@
 baseURL = "https://karetsu.github.io/diaries"
 languageCode = "en-gb"
 DefaultContentLanguage = "en"
-title = "The Fishman Diaries"
+title = "fish"
 theme = "meghna"
 summaryLength = 10
 publishDir="docs"
@@ -36,7 +36,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   home= "Home"
   logo = "images/logo_small.png"
   # Meta data
-  description = ""
+  description = "man"
   author = "Aloysius"
   code_copy_button = true
   # Google Analitycs
