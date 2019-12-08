@@ -33,6 +33,9 @@
     
     <link rel="stylesheet" href="https://karetsu.github.io/diaries/css/custom.css">
     
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/ocean.min.css">
 
 </head>
 <body id="body" data-spy="scroll" data-target=".navbar" data-offset="52">
@@ -64,9 +67,9 @@
 				<li class="nav-item"><a class="nav-link" data-scroll
 						href="https://karetsu.github.io/diaries#body">Home</a></li>
 				
-				<li class="nav-item"><a class="nav-link" data-scroll href="https://karetsu.github.io/diaries#blog">Blog</a></li>
-				
 				<li class="nav-item"><a class="nav-link" data-scroll href="https://karetsu.github.io/diaries#about">About Us</a></li>
+				
+				<li class="nav-item"><a class="nav-link" data-scroll href="https://karetsu.github.io/diaries#blog">Blog</a></li>
 				
 			</ul>
 		</div>
@@ -164,14 +167,14 @@ quagmire is a hard one to navigate and it is why this write up essentially exist
 <p>I&rsquo;m here to try to encourage you to be more pragmatic and critical about coding
 standards and to brain dump my thoughts on clean code in python.
 If you&rsquo;re reading this then I presume you&rsquo;re ready to dive in, but be warned,
-this might fall under (Sturgeon&rsquo;s Law)[<a href="https://en.wikipedia.org/wiki/Sturgeon%2527s_law]..">https://en.wikipedia.org/wiki/Sturgeon%2527s_law]..</a>.</p>
+this might fall under <a href="https://en.wikipedia.org/wiki/Sturgeon%2527s_law">Sturgeon&rsquo;s Law</a>&hellip;</p>
 
 <h2 id="acknowledgements-and-sources">Acknowledgements and Sources</h2>
 
 <p>I think the key takeaways from this post are inspired heavily by the following
 talk:</p>
 
-<p>(Raymond Hettinger - Beyond PEP 8 &ndash; Best practices for beautiful intelligible code - PyCon 2015)[<a href="https://www.youtube.com/watch?v=wf-BqAjZb8M">https://www.youtube.com/watch?v=wf-BqAjZb8M</a>]</p>
+<p><a href="https://www.youtube.com/watch?v=wf-BqAjZb8M">Raymond Hettinger - Beyond PEP 8 &ndash; Best practices for beautiful intelligible code - PyCon 2015</a></p>
 
 <p>Please go see it and show Raymond some love on various social media. Twitter is
 where posts useful tips and tricks for python.</p>
@@ -234,7 +237,7 @@ fight and know which sacrifices to make to ensure consistency with PEP8
 across your code-base and your project.</p>
 
 <p>See
-(here)[<a href="https://www.python.org/dev/peps/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds">https://www.python.org/dev/peps/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds</a>]
+<a href="https://www.python.org/dev/peps/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds">here</a>
 for yourself for a few cases where sacrificing style guide consistency might be preferred.</p>
 
 <h3 id="code-layout">Code Layout</h3>
@@ -248,39 +251,45 @@ for yourself for a few cases where sacrificing style guide consistency might be 
 <p>I firmly believe that using 4 spaced indents for your python code has a
 significant impact on the readability of the code. Imagine having a piece of
 code aligned as follows:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">function</span><span class="p">(</span><span class="n">parameter</span><span class="p">):</span>
 
-  <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+<pre><code class="language-python">def function(parameter):
 
-  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">parameter</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
-      <span class="n">result</span><span class="o">+=</span><span class="n">i</span>
-    <span class="k">else</span><span class="p">:</span>
-      <span class="k">continue</span>
+  result = 0
 
-  <span class="k">return</span> <span class="n">result</span></code></pre></div>
+  for i in parameter:
+    if i &gt; 10:
+      result+=i
+    else:
+      continue
+
+  return result
+</code></pre>
+
 <p>I don&rsquo;t know about you, but to me this seems a bit cramped. Refactoring your
 code as follows adds a bit more space and lets the eye clearly align and
 distinguish what level each line is at. And yes, I know you can get indentation
 guides in your fancy editor, but that won&rsquo;t be there for you when u want to
 quickly open this in Notepad or view it on GitHub.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">function</span><span class="p">(</span><span class="n">parameter</span><span class="p">):</span>
 
-    <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+<pre><code class="language-python">def function(parameter):
 
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">parameter</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
-            <span class="n">result</span><span class="o">+=</span><span class="n">i</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">continue</span>
+    result = 0
 
-    <span class="k">return</span> <span class="n">result</span></code></pre></div>
+    for i in parameter:
+        if i &gt; 10:
+            result+=i
+        else:
+            continue
+
+    return result
+</code></pre>
+
 <p>Note that things like the if statement and the code for each outcome is quite
 clearly indented and at least to my eye is easier to split out!</p>
 
 <p>The Indentation chapter of PEP8 covers some more interesting choices for
 indenting function parameters etc. If you are interested, you can read more
-about it (here)[<a href="https://www.python.org/dev/peps/pep-0008/#code-lay-out">https://www.python.org/dev/peps/pep-0008/#code-lay-out</a>].</p>
+about it <a href="https://www.python.org/dev/peps/pep-0008/#code-lay-out">here</a>.</p>
 
 <h4 id="tabs-or-spaces">Tabs or Spaces?</h4>
 
@@ -291,7 +300,7 @@ about it (here)[<a href="https://www.python.org/dev/peps/pep-0008/#code-lay-out"
 <p>I think as tedious as it sounds, you should use spaces (ideally 4) for
 indentation. I think to make it simpler, a lot of modern text editors that are
 used in coding as well as full blown
-(IDE)[<a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwi1keyUr-niAhX_QxUIHR41DhUQFjACegQIEhAG&amp;url=https%253A%252F%252Fen.wikipedia.org%252Fwiki%252FIntegrated_development_environment&amp;usg=AOvVaw26G_hSQrwphgc0qRbOs_Ur]'s">https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwi1keyUr-niAhX_QxUIHR41DhUQFjACegQIEhAG&amp;url=https%253A%252F%252Fen.wikipedia.org%252Fwiki%252FIntegrated_development_environment&amp;usg=AOvVaw26G_hSQrwphgc0qRbOs_Ur]'s</a>
+<a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwi1keyUr-niAhX_QxUIHR41DhUQFjACegQIEhAG&amp;url=https%253A%252F%252Fen.wikipedia.org%252Fwiki%252FIntegrated_development_environment&amp;usg=AOvVaw26G_hSQrwphgc0qRbOs_Ur">IDE</a>&rsquo;s
 will convert tabs into spaces for you if you ask them to if not by default.</p>
 
 <p>The issue is that if you mix tabs and spaces (which might look the same to you,
@@ -313,16 +322,19 @@ isn&rsquo;t very sensible.</p>
 <p><strong>Indentation in python is important</strong>. So lets say we have a bit of code with a
  function and a few nested structures within the code. Something along the lines
  of:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">useful_function_name</span><span class="p">(</span><span class="n">list_of_entries</span><span class="p">,</span> <span class="o">****</span><span class="n">kwargs</span><span class="p">):</span>
 
-    <span class="k">for</span> <span class="n">list_of_subentries</span> <span class="ow">in</span> <span class="n">list_of_entries</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">subentry</span> <span class="ow">in</span> <span class="n">list_of_subentries</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">subentry</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">some_global_list</span><span class="p">:</span>
-                <span class="k">print</span><span class="p">(</span><span class="s2">&#34;{} is not in the global list&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">subentry</span><span class="p">))</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">some_global_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">another_useful_function</span><span class="p">(</span><span class="n">subentry</span><span class="p">))</span>
+<pre><code class="language-python">def useful_function_name(list_of_entries, ****kwargs):
 
-    <span class="k">return</span> <span class="n">some_global_list</span></code></pre></div>
+    for list_of_subentries in list_of_entries:
+        for subentry in list_of_subentries:
+            if subentry not in some_global_list:
+                print(&quot;{} is not in the global list&quot;.format(subentry))
+            else:
+                some_global_list.append(another_useful_function(subentry))
+
+    return some_global_list
+</code></pre>
+
 <p>And perhaps you could say that this bit of code is not a realistic example, but
 it serves to illustrate that by having descriptive variable and function names and
 using 4 space indentation makes the 79 character limit approach ever so
@@ -400,23 +412,29 @@ priority of keeping the comments up-to-date when the code changes!</p>
 
 <p>Again, the section on comments is actually really good and has a ton of useful
 content. However the highlighted bit there is really important. Keep your
-comments (and (docstrings)[<a href="https://www.geeksforgeeks.org/python-docstrings/">https://www.geeksforgeeks.org/python-docstrings/</a>] and
+comments <a href="https://www.geeksforgeeks.org/python-docstrings/">and (docstrings</a> and
 any documentation) up to date!</p>
 
 <p>Avoid inline comments that say what the code does explicitly. If your code looks
 like this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">vaidated_input</span> <span class="o">=</span> <span class="n">validate</span><span class="p">(</span><span class="n">some_text</span><span class="p">)</span></code></pre></div>
+
+<pre><code class="language-python">vaidated_input = validate(some_text)
+</code></pre>
+
 <p>You don&rsquo;t need to comment it. It wastes your time, someone elses time
 reading it, computers time, space, time, space-time&hellip;
 Anyway, if you write your code in a tidy, descriptive way you won&rsquo;t need inline
 comments that state what your code does. That said, a very sensible use-case for
 an inline comment would be explaining why for example we do things. Like in that
 case there we could say:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">validated_input</span> <span class="o">=</span> <span class="n">validate</span><span class="p">(</span><span class="n">some_text</span><span class="p">)</span> <span class="c1"># Validate input to avoid code injection</span></code></pre></div>
+
+<pre><code class="language-python">validated_input = validate(some_text) # Validate input to avoid code injection
+</code></pre>
+
 <h3 id="docstrings">Docstrings</h3>
 
 <p>This deserves its own writeup, but suffice it to say that there is a separate
-(PEP)[<a href="https://www.python.org/dev/peps/pep-0257">https://www.python.org/dev/peps/pep-0257</a>] that covers how to style those.
+<a href="https://www.python.org/dev/peps/pep-0257">PEP</a> that covers how to style those.
 My advice on this account is: <strong>USE THEM</strong>. Please go read about them, pick
 sensible guidelines on how to write them and use them.</p>
 
@@ -425,7 +443,7 @@ sensible guidelines on how to write them and use them.</p>
 <p>I kept writting this post and decided to jump back up to this section and add a
 bit more emphasis on docstring. I think once you&rsquo;ve written them once or twice
 given a chosen standard (I use the
-(numpy)[<a href="https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html">https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html</a>]
+<a href="https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html">numpy</a>
 it will soon become almost second nature. And it will <strong>ALWAYS</strong> be easier to
 write them after you&rsquo;ve written the code that they relate to. Because (a) you
 have all the things it needs and does fresh in your head and (b) its much harder
@@ -450,7 +468,10 @@ Styles)[<a href="https://www.python.org/dev/peps/pep-0008/#descriptive-naming-st
 section of PEP8 shows there are a lot of ways to name your functions, variables
 etc. I personally use what is called snake case when I write in python meaning
 that I link words in my function names with underscores like so:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">my_new_value</span> <span class="o">=</span> <span class="n">my_snake_case_function</span><span class="p">(</span><span class="n">old_value</span><span class="p">)</span></code></pre></div>
+
+<pre><code class="language-python">my_new_value = my_snake_case_function(old_value)
+</code></pre>
+
 <p>In python for the most part, that is the recommended way to name things like
 variables and functions. In other languages, like <code>Rust</code>, you even get told off
 by the compiler for not doing that. That said its not the end of the world to
@@ -484,21 +505,24 @@ looking and functioning code.</p>
 <p>What does it mean to be <em>pythonic</em>?</p>
 
 <p>Let me give you two example functions:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">example1</span><span class="p">():</span>
-    <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
 
-    <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&#34;yellow&#34;</span><span class="p">,</span> <span class="s2">&#34;blue&#34;</span><span class="p">,</span> <span class="s2">&#34;red&#34;</span><span class="p">]:</span>
-        <span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34; &#34;</span> <span class="o">+</span> <span class="n">color</span><span class="p">)</span>
-        <span class="n">index</span> <span class="o">=</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span>
+<pre><code class="language-python">def example1():
+    index = 0
 
-<span class="c1"># ------</span>
-<span class="k">def</span> <span class="nf">example2</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">color</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="s2">&#34;yellow&#34;</span><span class="p">,</span> <span class="s2">&#34;blue&#34;</span><span class="p">,</span> <span class="s2">&#34;red&#34;</span><span class="p">]):</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&#34;{index + 1} {color}&#34;</span><span class="p">)</span>
+    for color in [&quot;yellow&quot;, &quot;blue&quot;, &quot;red&quot;]:
+        print(str(index) + &quot; &quot; + color)
+        index = index + 1
 
-<span class="c1"># ------ for fun :)</span>
-<span class="k">def</span> <span class="nf">example3</span><span class="p">():</span>
-    <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">tpl</span><span class="p">:</span> <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&#34;{tpl[0]} {tpl[1]}&#34;</span><span class="p">),</span> <span class="nb">enumerate</span><span class="p">([</span><span class="s2">&#34;yellow&#34;</span><span class="p">,</span><span class="s2">&#34;blue&#34;</span><span class="p">,</span><span class="s2">&#34;red&#34;</span><span class="p">])))</span></code></pre></div>
+# ------
+def example2():
+    for index, color in enumerate([&quot;yellow&quot;, &quot;blue&quot;, &quot;red&quot;]):
+        print(f&quot;{index + 1} {color}&quot;)
+
+# ------ for fun :)
+def example3():
+    list(map(lambda tpl: print(f&quot;{tpl[0]} {tpl[1]}&quot;), enumerate([&quot;yellow&quot;,&quot;blue&quot;,&quot;red&quot;])))
+</code></pre>
+
 <p>Let&rsquo;s assume we don&rsquo;t care about efficiency in this function. We don&rsquo;t mind
 because it does such a minor thing in the grand scheme of our codebase.
 Under that assumption, both these functions will do the same job.</p>
@@ -515,7 +539,7 @@ purely from the way they have written the piece of code its clear that
 <p><code>So what?</code> I can hear you say. Does that change much? Well as I am writing this
 these two are equivilent to me, but the second one looks tidier as it leverages
 things that are made to solve the required problems (like
-(enumerate)[<a href="https://www.python.org/dev/peps/pep-0279/])">https://www.python.org/dev/peps/pep-0279/])</a>. This is what In my head
+<a href="https://www.python.org/dev/peps/pep-0279/">enumerate</a>). This is what In my head
 it all boils down to. Over time you learn more about python, its features and
 what should feel <code>right</code> when it comes to code in python. And then you become
 more pythonic which to me means you start leveraging all the tools the language
@@ -661,7 +685,14 @@ write it in a nice and tidy way without even noticing.</p>
 <!-- /footer -->
 
 <!-- Essential Scripts -->
+    <!-- highlight.js -->
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/languages/haskell.min.js"></script>
 
+    <script>
+     hljs.configure({languages: []});
+      hljs.initHighlightingOnLoad();
+    </script>
 		<!-- Main jQuery -->
 		<script type="text/javascript" src="https://karetsu.github.io/diaries/plugins/jquery/dist/jquery.min.js"></script>
 		<!-- Bootstrap 4.3 + Popper -->

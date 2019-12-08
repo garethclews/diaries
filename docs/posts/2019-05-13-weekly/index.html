@@ -33,6 +33,9 @@
     
     <link rel="stylesheet" href="https://karetsu.github.io/diaries/css/custom.css">
     
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/ocean.min.css">
 
 </head>
 <body id="body" data-spy="scroll" data-target=".navbar" data-offset="52">
@@ -64,9 +67,9 @@
 				<li class="nav-item"><a class="nav-link" data-scroll
 						href="https://karetsu.github.io/diaries#body">Home</a></li>
 				
-				<li class="nav-item"><a class="nav-link" data-scroll href="https://karetsu.github.io/diaries#blog">Blog</a></li>
-				
 				<li class="nav-item"><a class="nav-link" data-scroll href="https://karetsu.github.io/diaries#about">About Us</a></li>
+				
+				<li class="nav-item"><a class="nav-link" data-scroll href="https://karetsu.github.io/diaries#blog">Blog</a></li>
 				
 			</ul>
 		</div>
@@ -282,7 +285,14 @@ prettier just fire an email my way!</p>
 <!-- /footer -->
 
 <!-- Essential Scripts -->
+    <!-- highlight.js -->
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/languages/haskell.min.js"></script>
 
+    <script>
+     hljs.configure({languages: []});
+      hljs.initHighlightingOnLoad();
+    </script>
 		<!-- Main jQuery -->
 		<script type="text/javascript" src="https://karetsu.github.io/diaries/plugins/jquery/dist/jquery.min.js"></script>
 		<!-- Bootstrap 4.3 + Popper -->

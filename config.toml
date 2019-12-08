@@ -1,13 +1,13 @@
+# The fishman diaries
 baseURL = "https://karetsu.github.io/diaries"
 languageCode = "en-gb"
 DefaultContentLanguage = "en"
 title = "the fishman diaries"
 theme = "meghna"
+pygmentsUseClasses = true # syntax highlighting
 summaryLength = 10
 publishDir="docs"
-pygmentsCodefences  = true
-pygmentsUseClasses  = true
-rssLimit = 10  # Maximum number of items in the RSS feed.
+rssLimit = 10
 enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
 
 [taxonomies]
@@ -15,17 +15,29 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   category = "categories"
   tag = "tags"
 
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = "algol"
+    tabWidth = 2
+
 # Menu
 [menu]
     [[menu.nav]]
     name = "Blog"
     URL = "blog"
-    weight = 2
+    weight = 3
 
     [[menu.nav]]
     name = "About Us"
     URL = "about"
-    weight = 3
+    weight = 2
 
 # Site params
 [params]
