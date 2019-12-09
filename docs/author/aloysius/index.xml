@@ -6,10 +6,19 @@
     <description>Recent content in aloysius on the fishman diaries</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 02 Dec 2019 09:57:55 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Dec 2019 07:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://karetsu.github.io/diaries/author/aloysius/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yippie kayak, other buckets!</title>
+      <link>https://karetsu.github.io/diaries/posts/2019-12-09-weekly/</link>
+      <pubDate>Mon, 09 Dec 2019 07:00:00 +0000</pubDate>
+      
+      <guid>https://karetsu.github.io/diaries/posts/2019-12-09-weekly/</guid>
+      <description>Post of the Week The Information Commisssioner&amp;rsquo;s Office and The Alan Turing Institute are teaming up to publish their first draft of guidance into the use of &amp;lsquo;AI&amp;rsquo;.</description>
+    </item>
     
     <item>
       <title>A New Hope</title>
@@ -92,15 +101,6 @@ One more time through the fire</description>
       
       <guid>https://karetsu.github.io/diaries/posts/2019-10-01-weekly/</guid>
       <description>I&amp;rsquo;m back from leave. These are the things I found interesting in my week off.</description>
-    </item>
-    
-    <item>
-      <title>Artful code</title>
-      <link>https://karetsu.github.io/diaries/posts/2019-09-30-opinion/</link>
-      <pubDate>Mon, 30 Sep 2019 09:00:00 +0000</pubDate>
-      
-      <guid>https://karetsu.github.io/diaries/posts/2019-09-30-opinion/</guid>
-      <description>&amp;hellip;or how I stopped worrying about getting it perfect and started to love PEP8</description>
     </item>
     
   </channel>
