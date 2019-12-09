@@ -1,7 +1,5 @@
 enable : true
 sharing : true
+heading : Blog
+headingSpan : Posts
 url : diaries/posts
-staticmanComments:
-  enable: false
-  notifications: true
-  api: https://staticfishman.herokuapp.com/v2/entry/karetsu/diaries/master/comments
