@@ -15,14 +15,12 @@ free to propose changes to this document in a pull request.
 started?](#what-should-i-know-before-i-get-started)
 
 [How Can I Contribute?](#how-can-i-contribute)
-  * [Reporting Bugs](#reporting-bugs)
   * [Suggesting Enhancements](#suggesting-enhancements)
   * [Your First Code Contribution](#your-first-code-contribution)
   * [Pull Requests](#pull-requests)
 
 [Styleguides](#styleguides)
   * [Git Commit Messages](#git-commit-messages)
-  * [Documentation Styleguide](#documentation-styleguide)
 
 [Additional Notes](#additional-notes)
   * [Issue and Pull Request Labels](#issue-and-pull-request-labels)
@@ -84,15 +82,13 @@ which we have made use of.
 
 ### Suggesting Enhancements
 
-+TODO
+Please raise an issue using the web functionality template.
+
 
 #### Before Submitting An Enhancement Suggestion
 
-+TODO
+Please check that there is not already an issue open covering what you desire.
 
-#### How Do I Submit A (Good) Enhancement Suggestion?
-
-+TODO
 
 ### Your First Code Contribution
 
@@ -102,7 +98,10 @@ issue` and `beginner` tags. These are the best places to start.
 
 ### Pull Requests
 
-+TODO
+Contributing content is very much welcomed. Pull requests must follow the
+directory hierarchy of the existing content. Posts should be included in
+`./data/posts` and be in markdown, whilst thematic and functional changes need to
+be included in the theme stubs included in the repository.
 
 ## Styleguides
 
@@ -122,11 +121,6 @@ issue` and `beginner` tags. These are the best places to start.
     * :lock: `:lock:` when dealing with security
     * :arrow_up: `:arrow_up:` when upgrading dependencies
     * :arrow_down: `:arrow_down:` when downgrading dependencies
-
-
-### Documentation Styleguide
-
-+TODO
 
 
 ## Additional Notes
@@ -153,13 +147,7 @@ Please open an issue if you have suggestions for new labels.
 
 #### Type of Issue and Issue State
 
-+TODO
+There are two distinct types of issue. Please use the correct template for your
+issue type, if you find that your issue is not pertaining to the functioning of
+the webpages or the content then raise an issue suggesting what is missing.
 
-#### Topic Categories
-
-+TODO
-
-
-#### Pull Request Labels
-
-+TODO
