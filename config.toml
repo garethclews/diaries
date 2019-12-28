@@ -31,7 +31,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 # Menu
 [menu]
     [[menu.nav]]
-    name = "Blog"
+    name = "Archive"
     URL = "blog"
     weight = 3
 
@@ -41,7 +41,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     weight = 2
 
     [[menu.nav]]
-    name = "Authors"
+    name = "Contributors"
     URL = "our-team"
     weight = 4
 
@@ -60,18 +60,26 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   # Google Analitycs
   custom_css = ["css/custom.css"]
 
-    [params.team]
-    enable = true
-    title = "Contributors"
-
     # counter
     [params.counter]
     enable = true
     bgImage = "images/backgrounds/bg-1.jpg"
         [[params.counter.counterItem]]
         title = "Open issues"
-        icon = "tf-ion-android-happy"
+        icon = "tf-ion-android-sad"
         count = "10"
+        [[params.counter.counterItem]]
+        title = "Posts"
+        icon = "tf-ion-bookmark"
+        count = "30"
+        [[params.counter.counterItem]]
+        title = "Contributors"
+        icon = "tf-ion-ios-contact"
+        count = "3"
+        [[params.counter.counterItem]]
+        title = "Version"
+        icon = "tf-ion-android-happy"
+        count = "0.9"
 
 
     [params.preloader]

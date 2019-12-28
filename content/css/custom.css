@@ -46,3 +46,15 @@ img.img-fluid.mb-50{
 .list-inline {
   height: 0;
 }
+
+.copyright {
+  padding-top: 50px;
+}
+
+
+#counter {
+  background-color: #292f36;
+}
+.counters-item {
+  background-color: #292f36;
+}

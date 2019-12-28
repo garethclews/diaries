@@ -1,0 +1,11 @@
+enable : true
+heading : Our
+headingSpan : Contributors
+teamMember :
+  - image : images/con/aloy.png
+    name : Aloysius
+    designation : Primary offender
+    description : A mathematician playing at statistics.
+    socialIcon :
+      - icon : tf-ion-social-twitter
+        url : "https://twitter.com/raisedbyfinches"
