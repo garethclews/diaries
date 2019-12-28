@@ -30,3 +30,19 @@ a:focus, a:hover {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+
+/* images */
+img.img-fluid.mb-50{
+  /*
+  height: 120px;
+  width: auto;
+  clip-path: circle(60px at center);
+  */
+  height: 0;
+  visibility: hidden;
+}
+
+.list-inline {
+  height: 0;
+}

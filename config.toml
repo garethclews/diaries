@@ -27,6 +27,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     style = "algol"
     tabWidth = 2
 
+
 # Menu
 [menu]
     [[menu.nav]]
@@ -38,6 +39,11 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     name = "About Us"
     URL = "about"
     weight = 2
+
+    [[menu.nav]]
+    name = "Authors"
+    URL = "our-team"
+    weight = 4
 
 # Site params
 [params]
@@ -54,18 +60,41 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   # Google Analitycs
   custom_css = ["css/custom.css"]
 
+    [params.team]
+    enable = true
+    title = "Contributors"
+
+    # counter
+    [params.counter]
+    enable = true
+    bgImage = "images/backgrounds/bg-1.jpg"
+        [[params.counter.counterItem]]
+        title = "Open issues"
+        icon = "tf-ion-android-happy"
+        count = "10"
+
+
+    [params.preloader]
+    enable = true
+    preloader = "images/cthulu.jpg"
+
+
     # Banner Section
     [params.banner]
     enable = true
     bgImage = "images/cthulu.jpg"
-    #icon = "tf-ion-play"
     heading = "The Fishman Diaries"
     content= "A curated archive of interesting blogs and papers"
     btn = true
     btnText="Read posts"
     btnURL="posts/"
 
+
     # footer
     [params.footer]
         copyright = "Aloysius"
         copyrightURL = "https://github.com/karetsu"
+
+        [[params.footer.socialIcon]]
+        icon = "tf-ion-social-rss"
+        url = "index.xml"
