@@ -67,7 +67,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
         [[params.counter.counterItem]]
         title = "Open issues"
         icon = "tf-ion-android-sad"
-        count = "10"
+        count = "9"
         [[params.counter.counterItem]]
         title = "Posts"
         icon = "tf-ion-bookmark"
@@ -75,11 +75,11 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
         [[params.counter.counterItem]]
         title = "Contributors"
         icon = "tf-ion-ios-contact"
-        count = "3"
+        count = "1"
         [[params.counter.counterItem]]
         title = "Version"
-        icon = "tf-ion-android-happy"
-        count = "0.9"
+        icon = "tf-ion-flash"
+        count = "0.9.1"
 
 
     [params.preloader]

@@ -5,7 +5,11 @@ teamMember :
   - image : images/con/aloy.png
     name : Aloysius
     designation : Primary offender
-    description : A mathematician playing at statistics.
+    description : A pure mathematician playing at statistics.
     socialIcon :
+      - icon : tf-ion-android-globe
+        url : "https://karetsu.github.io"
+      - icon : tf-ion-social-github
+        url : "https://github.com/karetsu"
       - icon : tf-ion-social-twitter
         url : "https://twitter.com/raisedbyfinches"
