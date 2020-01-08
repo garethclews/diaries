@@ -6,10 +6,20 @@
     <description>Recent content in Posts on the fishman diaries</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 16 Dec 2019 05:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jan 2020 05:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://karetsu.github.io/diaries/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data science and the occult</title>
+      <link>https://karetsu.github.io/diaries/posts/2020-01-03-opinion/</link>
+      <pubDate>Wed, 08 Jan 2020 05:00:00 +0000</pubDate>
+      
+      <guid>https://karetsu.github.io/diaries/posts/2020-01-03-opinion/</guid>
+      <description>Disclaimer: This title is click-bait.
+I have read very little data science content over the Christmas period.</description>
+    </item>
     
     <item>
       <title>The whole thing starts with a box</title>
@@ -92,15 +102,6 @@ One more time through the fire</description>
       
       <guid>https://karetsu.github.io/diaries/posts/2019-10-24-weekly/</guid>
       <description>There is something haunting in the light of the moon; it has all the dispassionateness of a disembodied soul, and something of its inconceivable mystery.</description>
-    </item>
-    
-    <item>
-      <title>Oh look, another glorious morning. Makes me sick!</title>
-      <link>https://karetsu.github.io/diaries/posts/2019-10-15-weekly/</link>
-      <pubDate>Tue, 15 Oct 2019 09:00:00 +0000</pubDate>
-      
-      <guid>https://karetsu.github.io/diaries/posts/2019-10-15-weekly/</guid>
-      <description>After summer we are&amp;hellip;   Blogs and commentary  Do you find your logistic regression loss behaves?</description>
     </item>
     
   </channel>
