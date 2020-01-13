@@ -71,7 +71,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
         [[params.counter.counterItem]]
         title = "Posts"
         icon = "tf-ion-bookmark"
-        count = "31"
+        count = "32"
         [[params.counter.counterItem]]
         title = "Contributors"
         icon = "tf-ion-ios-contact"
