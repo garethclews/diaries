@@ -6,10 +6,19 @@
     <description>Recent content on the fishman diaries</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 08 Jan 2020 05:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jan 2020 05:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://karetsu.github.io/diaries/author/aloysius/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bad Men</title>
+      <link>https://karetsu.github.io/diaries/posts/2020-01-13-weekly/</link>
+      <pubDate>Mon, 13 Jan 2020 05:00:00 +0000</pubDate>
+      
+      <guid>https://karetsu.github.io/diaries/posts/2020-01-13-weekly/</guid>
+      <description>A quiet week to start the year off. Wading through a fair share of &amp;lsquo;best of&amp;rsquo; collections only one has made it as far as this week&amp;rsquo;s post!</description>
+    </item>
     
     <item>
       <title>Data science and the occult</title>
@@ -93,15 +102,6 @@ One more time through the fire</description>
       
       <guid>https://karetsu.github.io/diaries/posts/2019-10-29-weekly/</guid>
       <description>Blessings to you and your beloved dead, on this night when the veil is thin and there is magick in the air.</description>
-    </item>
-    
-    <item>
-      <title>Salvation is a last-minute business, boy</title>
-      <link>https://karetsu.github.io/diaries/posts/2019-10-24-weekly/</link>
-      <pubDate>Thu, 24 Oct 2019 09:00:00 +0000</pubDate>
-      
-      <guid>https://karetsu.github.io/diaries/posts/2019-10-24-weekly/</guid>
-      <description>There is something haunting in the light of the moon; it has all the dispassionateness of a disembodied soul, and something of its inconceivable mystery.</description>
     </item>
     
   </channel>
