@@ -6,10 +6,19 @@
     <description>Recent content in Posts on the fishman diaries</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 13 Jan 2020 05:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jan 2020 05:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://karetsu.github.io/diaries/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Said the King to the River</title>
+      <link>https://karetsu.github.io/diaries/posts/2020-01-20-weekly/</link>
+      <pubDate>Mon, 20 Jan 2020 05:00:00 +0000</pubDate>
+      
+      <guid>https://karetsu.github.io/diaries/posts/2020-01-20-weekly/</guid>
+      <description>2020&amp;rsquo;s content is finally coming through. Lots of fun and intereting things to bring my brain slowly out of its slumber.</description>
+    </item>
     
     <item>
       <title>Bad Men</title>
@@ -93,15 +102,6 @@ Post of the week This week has been spent mostly reading mathematics (which I wo
       <guid>https://karetsu.github.io/diaries/posts/2019-11-04-weekly/</guid>
       <description>One more revolution, my love
 One more time through the fire</description>
-    </item>
-    
-    <item>
-      <title>Once upon a midnight dreary</title>
-      <link>https://karetsu.github.io/diaries/posts/2019-10-29-weekly/</link>
-      <pubDate>Tue, 29 Oct 2019 09:00:00 +0000</pubDate>
-      
-      <guid>https://karetsu.github.io/diaries/posts/2019-10-29-weekly/</guid>
-      <description>Blessings to you and your beloved dead, on this night when the veil is thin and there is magick in the air.</description>
     </item>
     
   </channel>
