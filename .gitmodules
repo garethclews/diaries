@@ -4,3 +4,9 @@
 [submodule "themes/meghna"]
 	path = themes/meghna
 	url = https://github.com/themefisher/meghna-hugo
+[submodule "themes/minimal"]
+	path = themes/minimal
+	url = https://github.com/calintat/minimal.git
+[submodule "themes/sam"]
+	path = themes/sam
+	url = https://github.com/victoriadrake/hugo-theme-sam.git

@@ -3,7 +3,7 @@ baseURL = "https://karetsu.github.io/diaries"
 languageCode = "en-gb"
 DefaultContentLanguage = "en"
 title = "the fishman diaries"
-theme = "meghna"
+theme = "sam" # "m10c"
 pygmentsUseClasses = true # syntax highlighting
 summaryLength = 10
 publishDir="docs"
@@ -57,7 +57,6 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   description = "<3"
   author = "Aloysius"
   code_copy_button = true
-  # Google Analitycs
   custom_css = ["css/custom.css"]
 
     # counter
