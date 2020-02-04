@@ -6,15 +6,24 @@
     <description>Recent content on the fishman diaries</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 20 Jan 2020 05:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2020 12:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://karetsu.github.io/diaries/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>The afternoon knows what the morning never suspected</title>
+      <link>https://karetsu.github.io/diaries/posts/2020-02-05-opinion/</link>
+      <pubDate>Tue, 04 Feb 2020 12:00:00 +0000</pubDate>
+      
+      <guid>https://karetsu.github.io/diaries/posts/2020-02-05-opinion/</guid>
+      <description>Following the recent loss of all my hard work adapting the thematic side of the website I have made the decision to call it a day with this blog.</description>
+    </item>
+    
+    <item>
       <title>Keyhouse</title>
       <link>https://karetsu.github.io/diaries/posts/2020-02-04-weekly/</link>
-      <pubDate>Mon, 20 Jan 2020 05:00:00 +0000</pubDate>
+      <pubDate>Tue, 04 Feb 2020 05:00:00 +0000</pubDate>
       
       <guid>https://karetsu.github.io/diaries/posts/2020-02-04-weekly/</guid>
       <description>A bumper crop after a week &amp;lsquo;off&amp;rsquo; catching up on learning and life.</description>
@@ -91,16 +100,6 @@ I have read very little data science content over the Christmas period.</descrip
       
       <guid>https://karetsu.github.io/diaries/posts/2019-11-18-weekly/</guid>
       <description>There are a million ways we should’ve died before today, and a million ways we can die before tomorrow.</description>
-    </item>
-    
-    <item>
-      <title>The fast and the furious</title>
-      <link>https://karetsu.github.io/diaries/posts/2019-11-12-weekly/</link>
-      <pubDate>Tue, 12 Nov 2019 09:00:00 +0000</pubDate>
-      
-      <guid>https://karetsu.github.io/diaries/posts/2019-11-12-weekly/</guid>
-      <description>Hobbs &amp;amp; Shaw wasn&amp;rsquo;t actually that bad&amp;hellip;
-Post of the week This week has been spent mostly reading mathematics (which I won&amp;rsquo;t bore you with) so my post of the week is the light summary of OpenAI releasing that they said was too dangerous.</description>
     </item>
     
   </channel>
