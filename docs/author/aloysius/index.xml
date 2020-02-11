@@ -6,10 +6,19 @@
     <description>Recent content on the fishman diaries</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 04 Feb 2020 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 05:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://karetsu.github.io/diaries/author/aloysius/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Magnificent Tool of Destruction</title>
+      <link>https://karetsu.github.io/diaries/posts/2020-02-11-weekly/</link>
+      <pubDate>Tue, 11 Feb 2020 05:00:00 +0000</pubDate>
+      
+      <guid>https://karetsu.github.io/diaries/posts/2020-02-11-weekly/</guid>
+      <description>A quiet week on account of the origin of the title.</description>
+    </item>
     
     <item>
       <title>The afternoon knows what the morning never suspected</title>
@@ -91,15 +100,6 @@ I have read very little data science content over the Christmas period.</descrip
       
       <guid>https://karetsu.github.io/diaries/posts/2019-11-25-weekly/</guid>
       <description>Time is limited this week, so expect a rushed description of the content, but it is still better than no content!</description>
-    </item>
-    
-    <item>
-      <title>Cordyceps</title>
-      <link>https://karetsu.github.io/diaries/posts/2019-11-18-weekly/</link>
-      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
-      
-      <guid>https://karetsu.github.io/diaries/posts/2019-11-18-weekly/</guid>
-      <description>There are a million ways we should’ve died before today, and a million ways we can die before tomorrow.</description>
     </item>
     
   </channel>
