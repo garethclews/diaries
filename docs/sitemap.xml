@@ -4,26 +4,31 @@
   
   <url>
     <loc>https://karetsu.github.io/diaries/author/aloysius/</loc>
-    <lastmod>2020-02-11T05:00:00+00:00</lastmod>
+    <lastmod>2020-03-12T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://karetsu.github.io/diaries/posts/2020-03-12-weekly/</loc>
+    <lastmod>2020-03-12T05:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://karetsu.github.io/diaries/author/</loc>
-    <lastmod>2020-02-11T05:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://karetsu.github.io/diaries/posts/2020-02-11-weekly/</loc>
-    <lastmod>2020-02-11T05:00:00+00:00</lastmod>
+    <lastmod>2020-03-12T05:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://karetsu.github.io/diaries/posts/</loc>
-    <lastmod>2020-02-11T05:00:00+00:00</lastmod>
+    <lastmod>2020-03-12T05:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://karetsu.github.io/diaries/</loc>
+    <lastmod>2020-03-12T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://karetsu.github.io/diaries/posts/2020-02-11-weekly/</loc>
     <lastmod>2020-02-11T05:00:00+00:00</lastmod>
   </url>
   
@@ -205,6 +210,11 @@
   <url>
     <loc>https://karetsu.github.io/diaries/posts/2019-04-24-weekly/</loc>
     <lastmod>2019-04-24T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://karetsu.github.io/diaries/posts/2020-02-18-weekly/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

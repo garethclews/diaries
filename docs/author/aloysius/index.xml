@@ -6,10 +6,19 @@
     <description>Recent content on the fishman diaries</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 11 Feb 2020 05:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2020 05:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://karetsu.github.io/diaries/author/aloysius/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A person is smart; people are dumb, panicky, dangerous animals and you know it</title>
+      <link>https://karetsu.github.io/diaries/posts/2020-03-12-weekly/</link>
+      <pubDate>Thu, 12 Mar 2020 05:00:00 +0000</pubDate>
+      
+      <guid>https://karetsu.github.io/diaries/posts/2020-03-12-weekly/</guid>
+      <description>After an extended hiatus (which has included a visit to Ghana and some annual leave) we are back.</description>
+    </item>
     
     <item>
       <title>Magnificent Tool of Destruction</title>
@@ -91,15 +100,6 @@ I have read very little data science content over the Christmas period.</descrip
       
       <guid>https://karetsu.github.io/diaries/posts/2019-11-29-weekly/</guid>
       <description>Who&amp;rsquo;s more foolish? The fool or the fool who follows him?</description>
-    </item>
-    
-    <item>
-      <title>Party all the time</title>
-      <link>https://karetsu.github.io/diaries/posts/2019-11-25-weekly/</link>
-      <pubDate>Mon, 25 Nov 2019 09:00:00 +0000</pubDate>
-      
-      <guid>https://karetsu.github.io/diaries/posts/2019-11-25-weekly/</guid>
-      <description>Time is limited this week, so expect a rushed description of the content, but it is still better than no content!</description>
     </item>
     
   </channel>
